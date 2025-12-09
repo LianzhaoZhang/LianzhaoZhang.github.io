@@ -243,3 +243,96 @@
     }
   }
 }
+
+/* ==========================================================================
+   PUBLICATIONS STYLING
+   ========================================================================== */
+
+.pub-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid $border-color;
+
+  @include breakpoint(max-width $small) {
+    flex-direction: column;
+  }
+}
+
+.pub-thumb {
+  flex-shrink: 0;
+  width: 200px;
+
+  @include breakpoint(max-width $small) {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-title {
+  margin: 0 0 0.4em;
+  font-size: $type-size-5;
+  font-weight: 600;
+  line-height: 1.4;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-authors {
+  margin: 0 0 0.3em;
+  font-size: $type-size-6;
+  color: $muted-text-color;
+  line-height: 1.5;
+}
+
+.pub-venue {
+  margin: 0 0 0.5em;
+  font-size: $type-size-6;
+  color: $muted-text-color;
+}
+
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.btn-tag {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: $type-size-7;
+  font-weight: 500;
+  color: $primary-color;
+  background-color: mix(#fff, $primary-color, 90%);
+  border: 1px solid mix(#fff, $primary-color, 70%);
+  border-radius: $border-radius;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+    text-decoration: none;
+  }
+}

@@ -10,4 +10,3 @@ type: "Journal Articles"
 collection: publications
 permalink: /publication/SlipDetectionAndRecovery
 ---
-

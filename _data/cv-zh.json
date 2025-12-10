@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Lianzhao Zhang",
+    "name": "张连兆",
     "email": "lianzhao1997@gmail.com",
     "website": "https://lianzhaozhang.github.io",
     "location": {
-      "address": "No. 92 Xidazhi Street, Nangang District",
+      "address": "南岗区西大直街92号",
       "postalCode": "150000",
-      "city": "Harbin",
-      "countryCode": "China",
-      "region": "Heilongjiang"
+      "city": "哈尔滨",
+      "countryCode": "中国",
+      "region": "黑龙江"
     },
     "profiles": [
       {
@@ -20,23 +20,23 @@
   },
   "education": [
     {
-      "institution": "Harbin Institute of Technology",
-      "area": "Mechanical Engineering",
-      "degree": "Ph.D.",
+      "institution": "哈尔滨工业大学",
+      "area": "机械工程",
+      "degree": "博士",
       "startDate": "2022",
-      "endDate": "Present"
+      "endDate": "至今"
     },
     {
-      "institution": "Harbin Institute of Technology",
-      "area": "Mechanical Engineering",
-      "degree": "M.S.",
+      "institution": "哈尔滨工业大学",
+      "area": "机械工程",
+      "degree": "硕士",
       "startDate": "2020",
       "endDate": "2022"
     },
     {
-      "institution": "Northwest A&F University",
-      "area": "Mechatronic Engineering",
-      "degree": "B.S.",
+      "institution": "西北农林科技大学",
+      "area": "机械电子工程",
+      "degree": "学士",
       "startDate": "2016",
       "endDate": "2020"
     }
@@ -85,95 +85,95 @@
   ],
   "patents": [
     {
-      "title": "A Stability Margin-Aware Whole-Body Control Method and System for Quadruped Robots",
+      "title": "一种基于稳定裕度感知的四足机器人抗干扰全身控制方法及其系统",
       "number": "CN202510603753.X",
       "date": "2025-08-15",
-      "inventors": "L. Zhang, W. Guo, F. Zha, et al.",
-      "status": "Under Examination",
-      "type": "Chinese Invention Patent"
+      "inventors": "张连兆, 郭伟, 查富生, 等",
+      "status": "实质审查",
+      "type": "中国发明专利"
     },
     {
-      "title": "A Decoupled Motion Control Method for Quadruped Mobile Manipulation Robots Considering Manipulator Forces",
+      "title": "一种考虑机械臂作用力的四足移动操作机器人解耦运动控制方法",
       "number": "CN202511697733.X",
       "date": "2025-11-19",
-      "inventors": "L. Zhang, W. Guo, F. Zha, et al.",
-      "status": "Filed",
-      "type": "Chinese Invention Patent"
+      "inventors": "张连兆, 郭伟, 查富生, 等",
+      "status": "受理",
+      "type": "中国发明专利"
     },
     {
-      "title": "A Clamping and Lifting Device for Lacquer Tapping Equipment",
+      "title": "一种割漆设备的夹紧升降装置",
       "number": "CN201920088035.3",
       "date": "2019-11-19",
-      "inventors": "L. Zhang, W. Li, P. Li",
-      "status": "Granted",
-      "type": "Chinese Utility Model Patent"
+      "inventors": "张连兆, 李卫, 李萍",
+      "status": "授权",
+      "type": "中国实用新型专利"
     },
     {
-      "title": "An Automatic Pineapple Picking Machine",
+      "title": "一种自动菠萝采摘机",
       "number": "CN201821542408.1",
       "date": "2019-06-11",
-      "inventors": "L. Zhang, D. He, X. Li, et al.",
-      "status": "Granted",
-      "type": "Chinese Utility Model Patent"
+      "inventors": "张连兆, 何东键, 李响, 等",
+      "status": "授权",
+      "type": "中国实用新型专利"
     },
     {
-      "title": "A Semi-automatic Pineapple Picking Machine",
+      "title": "一种半自动菠萝采摘机",
       "number": "CN201821614179.X",
       "date": "2019-07-09",
-      "inventors": "L. Zhang, Y. Wang, T. Wang, et al.",
-      "status": "Granted",
-      "type": "Chinese Utility Model Patent"
+      "inventors": "张连兆, 王云飞, 王滔鋆, 等",
+      "status": "授权",
+      "type": "中国实用新型专利"
     }
   ],
   "honors": [
     {
-      "title": "Merit Student of Heilongjiang Province",
-      "institution": "Education Department of Heilongjiang Province",
+      "title": "黑龙江省三好学生",
+      "institution": "黑龙江省教育厅",
       "data": "2025"
     },
     {
-      "title": "Outstanding Communist Party Member",
-      "institution": "Harbin Institute of Technology",
+      "title": "优秀共产党员",
+      "institution": "哈尔滨工业大学",
       "data": "2025"
     },
     {
-      "title": "Top Ten Party Branch Secretaries",
-      "institution": "Harbin Institute of Technology",
+      "title": "十佳党支部书记",
+      "institution": "哈尔滨工业大学",
       "data": "2025"
     },
     {
-      "title": "Outstanding Student Cadre",
-      "institution": "Harbin Institute of Technology",
+      "title": "优秀学生干部",
+      "institution": "哈尔滨工业大学",
       "data": "2024"
     },
     {
-      "title": "Outstanding League Member",
-      "institution": "Harbin Institute of Technology",
+      "title": "优秀团员",
+      "institution": "哈尔滨工业大学",
       "data": "2024"
     },
     {
-      "title": "Outstanding Student",
-      "institution": "Harbin Institute of Technology",
+      "title": "优秀学生",
+      "institution": "哈尔滨工业大学",
       "data": "2021"
     },
     {
-      "title": "Outstanding Graduation Project",
-      "institution": "Northwest A&F University",
+      "title": "优秀毕业设计",
+      "institution": "西北农林科技大学",
       "data": "2020"
     },
     {
-      "title": "First Prize in the 4th National College Student Intelligent Agricultural Equipment Innovation Competition",
-      "institution": "Chinese Society for Agricultural Machinery",
+      "title": "第四届全国大学生智能农业装备创新大赛一等奖",
+      "institution": "中国农业机械学会",
       "data": "2018"
     },
     {
-      "title": "First Prize in the 8th National College Student Mechanical Innovation Design Competition (Shaanxi Division)",
-      "institution": "Education Department of Shaanxi Province",
+      "title": "第八届全国大学生机械创新设计大赛陕西赛区一等奖",
+      "institution": "陕西省教育厅",
       "data": "2018"
     },
     {
-      "title": "First Prize in Engineering Training Comprehensive Ability Competition (Shaanxi Division)",
-      "institution": "Education Department of Shaanxi Province",
+      "title": "工程训练综合能力竞赛陕西赛区一等奖",
+      "institution": "陕西省教育厅",
       "data": "2017"
     }
   ]

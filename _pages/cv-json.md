@@ -9,9 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-{% include cv-template.html %}
-
-<div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+<div class="cv-language-switch" style="text-align: right; margin-bottom: 20px;">
+  <a href="{{ base_path }}/cv-zh/" class="btn btn--inverse">中文版</a>
 </div>
+
+{% include cv-template.html %}

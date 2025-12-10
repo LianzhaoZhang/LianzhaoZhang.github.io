@@ -1,4 +1,6 @@
-{% assign cv = site.data.cv %}
+{% unless cv %}
+  {% assign cv = site.data.cv %}
+{% endunless %}
 
 <style>
   .archive {
@@ -63,7 +65,7 @@
   {% if cv.basics.summary %}
   <!-- Summary -->
   <div class="cv-section">
-    <h2>Summary</h2>
+    <h2>{% if page.lang == 'zh' %}摘要{% else %}Summary{% endif %}</h2>
     <p>{{ cv.basics.summary }}</p>
   </div>
   {% endif %}
@@ -71,24 +73,95 @@
   {% if cv.education.size > 0 %}
   <!-- Education -->
   <div class="cv-section">
-    <h2>Education</h2>
-    <ul class="cv-list">
+    <h2>{% if page.lang == 'zh' %}教育经历{% else %}Education{% endif %}</h2>
+    <ul class="cv-list" style="list-style: none; padding: 0;">
       {% for education in cv.education %}
-      <li class="cv-item">
-        <div class="cv-item-header">
-          <div class="cv-item-title">{{ education.area }}</div>
-          <div class="cv-item-date">{{ education.endDate }}</div>
+      <li class="cv-item" style="margin-bottom: 10px;">
+        <div style="display: grid; grid-template-columns: 2.5fr 2fr 0.8fr 1.5fr; gap: 20px; align-items: center;">
+          <span><strong>{{ education.institution }}</strong></span>
+          <span>{{ education.area }}</span>
+          <span>{{ education.degree }}</span>
+          <span style="text-align: right;">{{ education.startDate }} -- {{ education.endDate }}</span>
         </div>
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ education.institution }}</div>
-          {% if education.gpa %}
-          <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if cv.publications.size > 0 %}
+  <!-- Publications -->
+  <div class="cv-section">
+    <h2>{% if page.lang == 'zh' %}发表论文{% else %}Publications{% endif %}</h2>
+    <ul class="cv-list" style="list-style: none; padding: 0;">
+      {% for publication in cv.publications %}
+      <li class="cv-item" style="margin-bottom: 15px;">
+        <div class="pub-body">
+          <h3 class="pub-title" style="font-size: 1.1em; margin-bottom: 5px;">
+            {% if publication.website %}
+              <a href="{{ publication.website }}" target="_blank">{{ publication.name }}</a>
+            {% else %}
+              {{ publication.name }}
+            {% endif %}
+          </h3>
+          
+          {% if publication.authors %}
+            <p class="pub-authors" style="margin: 5px 0; color: #666;">{{ publication.authors }}</p>
           {% endif %}
-          {% if education.courses.size > 0 %}
-          <div class="cv-item-detail">
-            <strong>Courses:</strong> {{ education.courses | join: ", " }}
-          </div>
+          
+          {% if publication.publisher or publication.releaseDate %}
+            <p class="pub-venue" style="margin: 5px 0;">
+              {% if publication.publisher %}<em>{{ publication.publisher }}</em>{% endif %}
+              {% if publication.releaseDate %}{% if publication.publisher %}, {% endif %}{{ publication.releaseDate | slice: 0, 4 }}{% endif %}
+            </p>
           {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if cv.patents.size > 0 %}
+  <!-- Patents -->
+  <div class="cv-section">
+    <h2>{% if page.lang == 'zh' %}专利{% else %}Patents{% endif %}</h2>
+    <ul class="cv-list" style="list-style: none; padding: 0;">
+      {% for patent in cv.patents %}
+      <li class="cv-item" style="margin-bottom: 15px;">
+        <div class="pub-body">
+          <h3 class="pub-title" style="font-size: 1.1em; margin-bottom: 5px;">
+            {{ patent.title }}
+          </h3>
+          
+          {% if patent.inventors %}
+            <p class="pub-authors" style="margin: 5px 0; color: #666;">{{ patent.inventors }}</p>
+          {% endif %}
+          
+          <p class="pub-venue" style="margin: 5px 0;">
+            <span>{{ patent.number }}</span>
+            {% if patent.date %}, {{ patent.date | slice: 0, 4 }}{% endif %}
+            {% if patent.type %}, {{ patent.type }}{% endif %}
+            {% if patent.status %} ({{ patent.status }}){% endif %}
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if cv.honors.size > 0 %}
+  <!-- Honors & Awards -->
+  <div class="cv-section">
+    <h2>{% if page.lang == 'zh' %}荣誉奖项{% else %}Honors & Awards{% endif %}</h2>
+    <ul class="cv-list" style="list-style: none; padding: 0;">
+      {% for honor in cv.honors %}
+      <li class="cv-item" style="margin-bottom: 10px;">
+        <div style="display: grid; grid-template-columns: 5fr 2fr 1fr; gap: 20px; align-items: center;">
+          <span>{{ honor.title }}</span>
+          <span>{{ honor.institution }}</span>
+          <span style="text-align: right;">{{ honor.data }}</span>
         </div>
       </li>
       {% endfor %}
@@ -99,7 +172,7 @@
   {% if cv.work.size > 0 %}
   <!-- Work Experience -->
   <div class="cv-section">
-    <h2>Work Experience</h2>
+    <h2>{% if page.lang == 'zh' %}工作经历{% else %}Work Experience{% endif %}</h2>
     <ul class="cv-list">
       {% for work in cv.work %}
       <li class="cv-item">
@@ -129,7 +202,7 @@
   {% if cv.skills.size > 0 %}
   <!-- Skills -->
   <div class="cv-section">
-    <h2>Skills</h2>
+    <h2>{% if page.lang == 'zh' %}技能{% else %}Skills{% endif %}</h2>
     <div class="cv-skills">
       {% for skill in cv.skills %}
       <div class="cv-skill-category">
@@ -145,38 +218,10 @@
   </div>
   {% endif %}
   
-  {% if cv.publications.size > 0 %}
-  <!-- Publications -->
-  <div class="cv-section">
-    <h2>Publications</h2>
-    <ul class="cv-list">
-      {% for publication in cv.publications %}
-      <li class="cv-item">
-        <div class="cv-item-header">
-          <div class="cv-item-title">{{ publication.name }}</div>
-          <div class="cv-item-date">{{ publication.releaseDate | slice: 0, 4 }}</div>
-        </div>
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ publication.publisher }}</div>
-          {% if publication.summary %}
-          <div class="cv-item-detail">{{ publication.summary }}</div>
-          {% endif %}
-          {% if publication.website %}
-          <div class="cv-item-detail">
-            <a href="{{ publication.website }}" target="_blank">View Publication</a>
-          </div>
-          {% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-  
   {% if cv.presentations.size > 0 %}
   <!-- Presentations/Talks -->
   <div class="cv-section">
-    <h2>Presentations</h2>
+    <h2>{% if page.lang == 'zh' %}学术报告{% else %}Presentations{% endif %}</h2>
     <ul class="cv-list">
       {% for talk in cv.presentations %}
       <li class="cv-item">
@@ -202,7 +247,7 @@
   {% if cv.teaching.size > 0 %}
   <!-- Teaching -->
   <div class="cv-section">
-    <h2>Teaching</h2>
+    <h2>{% if page.lang == 'zh' %}教学经历{% else %}Teaching{% endif %}</h2>
     <ul class="cv-list">
       {% for teaching in cv.teaching %}
       <li class="cv-item">
@@ -228,7 +273,7 @@
   {% if cv.portfolio.size > 0 %}
   <!-- Portfolio -->
   <div class="cv-section">
-    <h2>Portfolio</h2>
+    <h2>{% if page.lang == 'zh' %}项目作品{% else %}Portfolio{% endif %}</h2>
     <ul class="cv-list">
       {% for item in cv.portfolio %}
       <li class="cv-item">
@@ -256,7 +301,7 @@
   {% if cv.languages.size > 0 %}
   <!-- Languages -->
   <div class="cv-section">
-    <h2>Languages</h2>
+    <h2>{% if page.lang == 'zh' %}语言能力{% else %}Languages{% endif %}</h2>
     <ul class="cv-list">
       {% for language in cv.languages %}
       <li class="cv-item">
@@ -273,7 +318,7 @@
   {% if cv.interests.size > 0 %}
   <!-- Interests -->
   <div class="cv-section">
-    <h2>Interests</h2>
+    <h2>{% if page.lang == 'zh' %}兴趣爱好{% else %}Interests{% endif %}</h2>
     <ul class="cv-list">
       {% for interest in cv.interests %}
       <li class="cv-item">
@@ -292,7 +337,7 @@
   {% if cv.references.size > 0 %}
   <!-- References -->
   <div class="cv-section">
-    <h2>References</h2>
+    <h2>{% if page.lang == 'zh' %}推荐人{% else %}References{% endif %}</h2>
     <ul class="cv-list">
       {% for reference in cv.references %}
       <li class="cv-item">

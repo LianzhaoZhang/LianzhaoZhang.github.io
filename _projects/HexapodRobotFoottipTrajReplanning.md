@@ -6,6 +6,7 @@ video: https://youtu.be/-ONQTztaCsM
 website: https://lianzhaozhang.github.io/projects/HexapodRobotFoottipTrajReplanning
 collection: projects
 excerpt: "2020.11-2022.06"
+lang: zh
 ---
 
 ## 基本信息

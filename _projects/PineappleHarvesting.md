@@ -6,6 +6,7 @@ video: https://youtu.be/ZK09HMQcj48
 website: https://lianzhaozhang.github.io/projects/PineappleHarvesting
 collection: projects
 excerpt: "2018.05-2019.05"
+lang: zh
 ---
 
 ### 基本信息

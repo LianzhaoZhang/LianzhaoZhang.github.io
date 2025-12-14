@@ -6,6 +6,7 @@ video: https://youtu.be/8aGFX4PYL4I
 website: https://lianzhaozhang.github.io/projects/LacquerTapping
 collection: projects
 excerpt: "2018.12"
+lang: zh
 ---
 
 ### 基本信息

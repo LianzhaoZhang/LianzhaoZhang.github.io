@@ -1,12 +1,13 @@
 ---
 title: "重型六足机器人倾翻失稳和打滑失稳检测及恢复方法研究"
 venue: "哈尔滨工业大学"
-date: "2022-06-01"
+date: "2022.06"
 image: "/images/projects/Master.jpg"                                   
 video: https://youtu.be/uQ5aLORKmXw
 website: https://lianzhaozhang.github.io/projects/MasterThesis
 collection: projects
-excerpt: "2022-06-01"
+excerpt: "2022.06"
+lang: zh
 ---
 
 ## 论文内容

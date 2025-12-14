@@ -1,18 +1,18 @@
 ---
 layout: archive
-title: "Projects"
-permalink: /projects/
+title: "项目"
+permalink: /projects-zh/
 author_profile: true
 ---
 
 {% include base_path %}
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <a href="{{ base_path }}/projects-zh/" class="btn btn--inverse">中文版</a>
+  <a href="{{ base_path }}/projects/" class="btn btn--inverse">English Version</a>
 </div>
 
 {% for post in site.projects reversed %}
-  {% if post.lang == "en" %}
+  {% if post.lang == "zh" %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}

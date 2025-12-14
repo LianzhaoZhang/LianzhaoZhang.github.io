@@ -6,6 +6,7 @@ video: https://youtu.be/eOSXNs3l8kA
 website: https://lianzhaozhang.github.io/projects/UnderwaterHexapodRobotLegDesign
 collection: projects
 excerpt: "2019.09-2020.04"
+lang: zh
 ---
 
 ### 基本信息

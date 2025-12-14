@@ -2,7 +2,7 @@
 title: "水下六足机器人腿部结构设计"                                  
 date: "2020-04-01"
 image: "/images/projects/UnderwaterHexapodRobotLegDesign.jpg" 
-video: https://youtu.be/mkBknm-_xjE
+video: https://youtu.be/eOSXNs3l8kA
 website: https://lianzhaozhang.github.io/projects/UnderwaterHexapodRobotLegDesign
 collection: projects
 excerpt: "2019.09-2020.04"

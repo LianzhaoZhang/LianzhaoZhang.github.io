@@ -43,6 +43,20 @@
   ],
   "publications": [
     {
+      "name": "HiLoMa: Hierarchical Loco-Manipulation Control for Quadruped Manipulators with Coordinated Planning and Dynamic Coupling Compensation",
+      "publisher": "Journal of Bionic Engineering",
+      "releaseDate": "2026-05-20",
+      "authors": "L. Zhang, G. Chen, F. Zha, W. Guo, and Y. Shi",
+      "summary": ""
+    },
+    {
+      "name": "Biomimetic Stable Walking of Bipedal Robots Based on 3D Divergent Component of Motion",
+      "publisher": "Journal of Bionic Engineering",
+      "releaseDate": "2026-04-20",
+      "authors": "G. Chen, T. Zhang, W. Zheng, W. Chen, L. Zhang*(Corresponding author), and F. Zha",
+      "summary": ""
+    },
+    {
       "name": "An Integrated Framework for Slip Detection and Recovery in Hexapod Robot Force Control",
       "publisher": "Journal of Bionic Engineering",
       "releaseDate": "2025-08-21",
@@ -54,7 +68,7 @@
       "name": "PS-LIPM and G-ALIP: Novel Models for Robust Bipedal Locomotion on Discrete Uneven Terrains",
       "publisher": "Procedia Computer Science",
       "releaseDate": "2025-11-07",
-      "authors": "Y. Shi, S. Li, Y. Wu, J. Liu, X. Leng, L. Zhang*, X. Zang, and S. Piao",
+      "authors": "Y. Shi, S. Li, Y. Wu, J. Liu, X. Leng, L. Zhang*(Corresponding author), X. Zang, and S. Piao",
       "website": "https://doi.org/10.1016/j.procs.2025.10.105",
       "summary": ""
     },

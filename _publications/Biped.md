@@ -4,6 +4,7 @@ authors: "G. Chen, T. Zhang, W. Zheng, W. Chen, <b>L. Zhang</b><sup>*</sup>(Corr
 date: 2026-04-20
 venue: "Journal of Bionic Engineering"
 image: "/images/publication/Biped.png"
+paper: https://doi.org/10.1007/s42235-026-00905-x
 video: https://youtu.be/9I4iLm-Hq8U
 type: "Journal Articles"
 
